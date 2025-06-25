@@ -3,7 +3,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: radial-gradient(circle at top, #c94bdb 0%, #1c0a3d 100%);
+    /* I removed the background gradient */
+    background: #1c0a3d;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,6 +60,16 @@ body {
     color: #fff;
     opacity: 0.85;
     margin-top: 20px;
+}
+
+.background-img {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 600px) {
